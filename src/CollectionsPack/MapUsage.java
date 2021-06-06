@@ -1,8 +1,8 @@
 package CollectionsPack;
 /*
 1. The hierarchy of Java Map is given below:
-Map (Interface) <------SortedMap (Interface)<------TreeMap (Class)
-Map (Interface) <------Hashmap (Class) <--------- LinkedHashMap (Class)
+Iterable(Interface)<-----Collection(Interface)<-----Map (Interface) <------SortedMap (Interface)<------TreeMap (Class)
+Iterable(Interface)<-----Collection(Interface)<-----Map (Interface) <------Hashmap (Class) <--------- LinkedHashMap (Class)
 2. A Map is useful if you have to search, update or delete elements on the basis of a key.
 3. A Map doesn't allow duplicate keys, but you can have duplicate values. HashMap and LinkedHashMap allow null keys and
 values (but only 1 null key), but TreeMap doesn't allow any null key.
@@ -16,7 +16,7 @@ import org.json.simple.parser.*;
 import java.io.*;
 import java.util.*;
 
-public class HashmapUsage {
+public class MapUsage {
     public static void main(String[] args){
         JSONParser parser = new JSONParser();
         HashMap<String,String> hm = new HashMap<>();
